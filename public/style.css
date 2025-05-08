@@ -8,7 +8,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(to right, #e0eafc, #cfdef3);
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,7 +18,7 @@ body {
 .chat-container {
     width: 100%;
     max-width: 500px;
-    height: 95vh;
+    height: 100vh;
     background: white;
     border-radius: 20px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
@@ -110,6 +110,7 @@ body {
 
 /* Responsive Design */
 @media (max-width: 600px) {
+@media (max-width: 600px) {
     .chat-container {
         border-radius: 0;
         height: 100vh;
@@ -120,10 +121,19 @@ body {
     }
 
     #sendBtn {
-        padding: 10px 16px;
+        padding: 10px 14px;
+        font-size: 14px;
     }
 
     #messageInput {
         font-size: 14px;
+        padding: 10px 14px;
+    }
+
+    .input-container {
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 50px;
     }
 }
